@@ -8,7 +8,8 @@ Using the ChatGPT API, we then allow users to ask questions *about* the data the
 We have an existing feature called [Knowledge Base Actions](https://rasa.com/blog/integrating-rasa-with-knowledge-bases/) which does the same thing. In comparison, using ChatGPT is much simpler, but also occasionally makes up wrong answers!
 
 
-<img width="750" alt="image" src="https://user-images.githubusercontent.com/5114084/222743838-2c4ef87b-baa6-42fd-be19-bab627176ebc.png">
+<img width="1173" alt="image" src="https://user-images.githubusercontent.com/5114084/222745358-84140a22-12c6-493e-b66e-0c94a20afec0.png">
+
 
 Here's the data which the API has access to:
 
