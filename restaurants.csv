@@ -1,0 +1,16 @@
+Restaurants,Rating,Has WiFi,cuisine
+Mama's Pizza,4.5,False,italian
+Tacos el Cabron,4.6,True,mexican
+China Palace,3.2,False,chinese
+The Cheesecake Factory,4.2,True,american 
+Pizza Hut,3.8,True,italian 
+Biryani Bowl,4.9,False,indian 
+Burger King,2.6,True,american 
+Taco Bell,3.5,True,mexican 
+Freshii,4.7,True,healthy 
+Panda Express,3.9,False,chinese 
+McDonald's,2.3,True,american 
+Sushi Roku,4.8,True,japanese 
+Olive Garden,4.0,True,italian 
+Chipotle,4.4,True,mexican 
+Little Caesars,3.1,False,italian
