@@ -7,7 +7,7 @@ from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import SlotSet
 
 
-class AccountInfo(object):
+class RestaurantAPI(object):
 
     def __init__(self):
         self.db = pd.read_csv("restaurants.csv")
@@ -44,7 +44,7 @@ class ChatGPT(object):
         )
         return result.json()["choices"][0]["message"]["content"]
 
-accounts = AccountInfo()
+restaurant_api = RestaurantAPI()
 chatGPT = ChatGPT()
 
 class ActionShowRestaurants(Action):
@@ -56,9 +56,9 @@ class ActionShowRestaurants(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-        restaurants = accounts.fetch_restaurants()
-        results = accounts.format_restaurants(restaurants)
-        readable = accounts.format_restaurants(restaurants[['Restaurants', 'Rating']], header=False)
+        restaurants = restaurant_api.fetch_restaurants()
+        results = restaurant_api.format_restaurants(restaurants)
+        readable = restaurant_api.format_restaurants(restaurants[['Restaurants', 'Rating']], header=False)
         dispatcher.utter_message(text=f"Here are some restaurants:\n\n{readable}")
 
         return [SlotSet("results", results)]
