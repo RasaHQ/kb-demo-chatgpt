@@ -1,5 +1,10 @@
-# kb-demo-chatgpt
+# Using ChatGPT in a custom action to answer questions about data
 
-Use chatGPT to answer natural language questions about structured data - e.g. something you would fetch from an API
 
-<img width="705" alt="image" src="https://user-images.githubusercontent.com/5114084/222737240-f52e87d9-b6b9-41aa-831c-75a6891db17a.png">
+Most Rasa chatbots fetch data from an API. E.g. in the financial-demo, a user can see their latest transactions.
+Here, we have a dummy API returning restaurant results.
+
+Using the ChatGPT API, we then allow users to ask questions *about* the data they've just been shown:
+
+
+<img width="750" alt="image" src="https://user-images.githubusercontent.com/5114084/222743838-2c4ef87b-baa6-42fd-be19-bab627176ebc.png">
