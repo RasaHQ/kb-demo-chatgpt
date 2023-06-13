@@ -25,10 +25,6 @@ nlu:
 
 - intent: detail
   examples: |
-    - tell me 
-    - give me
-    - Give me details
-    - describe 
     - which of those have wifi?
     - what's the highest rated?
     - does the chinese place do takeaway?
