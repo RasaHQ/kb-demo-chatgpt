@@ -2,3 +2,4 @@
 models/
 credentials.yaml
 .rasa
+.env
